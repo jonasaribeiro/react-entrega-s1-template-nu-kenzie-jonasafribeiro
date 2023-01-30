@@ -1,0 +1,44 @@
+.welcomePage {
+    align-items: center;
+    background-color: var(--color-grey04);
+}
+
+.welcomePage h2 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--color-white);
+}
+
+.welcomePage p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.welcomePage button {
+    cursor: pointer;
+    background-color: var(--color-primary);
+    border-radius: 8px;
+    border-style: none;
+    padding: 13px 20px;
+
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.welcomePage img {
+    max-height: 100%;
+}
+
+@media (min-width: 770px){
+    .leftContainer{
+        width: 25%;
+    }
+}

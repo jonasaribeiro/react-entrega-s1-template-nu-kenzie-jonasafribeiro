@@ -5,11 +5,11 @@ import '../../styles/reset.css'
 import '../../styles/globalStyles.css'
 import "./index.css"
 
-export default function Header() {
+export default function Header({ nav }) {
     return (
         <header>
             <h1><img src={Img} alt="" /></h1>
-            <button>Início</button>
+            <button onClick={ function(){ nav.nav() } } >Início</button>
         </header>
     )
 }

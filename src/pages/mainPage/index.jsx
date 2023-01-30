@@ -10,7 +10,7 @@ import '../../styles/reset.css'
 import '../../styles/globalStyles.css'
 import "./index.css"
 
-export default function MainPage() {
+export default function MainPage(prop) {
     const [ list, setList ] = useState( JSON.parse(localStorage.getItem("@NuKenzie")) )
 
     return (
@@ -31,7 +31,7 @@ export default function MainPage() {
                 </div>
             </main>
             
-            <Header />
+            <Header nav={ prop } />
         </>
     )
 }
