@@ -12,8 +12,17 @@ export default function ListItem(prop) {
             </div>
             <div className='valueDiv'>
                 <span>{'R$ ' + prop.value.toFixed(2)}</span>
-                <button><img src={TrashCan} alt="X" /></button>
+                <button onClick={ e => removeHandler(prop) } ><img src={TrashCan} alt="X" /></button>
             </div>
         </li>
     )
+}
+
+function removeHandler(prop){
+    prop.callback( current => current.filter( element => (element.name !== prop.name || element.type !== prop.type || element.value !== prop.value)  ) );
+    let data = JSON.parse(localStorage.getItem("@NuKenzie"));
+    console.log(data)
+    localStorage.setItem("@NuKenzie", JSON.stringify(data.filter(element => (element.name !== prop.name || element.type !== prop.type || element.value !== prop.value))))
+    console.log(data)
+
 }

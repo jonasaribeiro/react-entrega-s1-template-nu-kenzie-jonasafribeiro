@@ -1,14 +1,12 @@
 import React from 'react'
-import { useState } from 'react'
 
 import '../../styles/reset.css'
 import '../../styles/globalStyles.css'
 import './index.css'
 
 export default function Form(prop) {
-
     return (
-        <form onSubmit={ e => [e.preventDefault(), prop.callback({value: parseFloat(e.target.value.value), name: e.target.name.value, type: e.target.type.value}) ] }>
+        <form onSubmit={ e => [e.preventDefault(), insertItem({value: parseFloat(e.target.value.value), name: e.target.name.value, type: e.target.type.value}),prop.callback([...prop.list, {value: parseFloat(e.target.value.value), name: e.target.name.value, type: e.target.type.value }])]}>
             <label htmlFor="">Descrição</label>
             <input required type="text" id='name' name='name' placeholder='Digite aqui sua descrição' />
             <span>Ex: Compra de roupas</span>
@@ -28,4 +26,11 @@ export default function Form(prop) {
             <button>Inserir valor</button>
         </form>
     )
+}
+
+function insertItem(newItemObj) {
+    let temp = localStorage.getItem("@NuKenzie")
+    let data = temp ? JSON.parse(temp) : []
+    data.push(newItemObj)
+    localStorage.setItem("@NuKenzie", JSON.stringify(data))
 }

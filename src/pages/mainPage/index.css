@@ -31,3 +31,18 @@ main > div {
     flex-direction: column;
     gap: 21px;
 }
+
+@media (min-width: 770px){
+    main{
+        justify-content: center;
+        flex-direction: row;
+    }
+    .form__Container{
+        max-width: 45%;
+        min-width: 45%;
+    }
+    .list__Container{
+        max-width: 45%;
+        min-width: 45%;
+    }
+}
