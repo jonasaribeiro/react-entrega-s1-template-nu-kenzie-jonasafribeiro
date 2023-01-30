@@ -1,0 +1,33 @@
+main {
+    background-color: var(--color-white);
+    padding: 100px 12px 40px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 100%;
+}
+
+.list__Container > h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-grey-04);
+}
+
+.list__Container > h2.title2 {
+    font-size: 1.34rem;
+    font-weight: 700;
+    color: var(--color-grey-03);
+} 
+
+.list__Container > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}

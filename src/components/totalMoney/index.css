@@ -1,0 +1,32 @@
+.totalMoney__Container {
+    min-width: 100%;
+    border: 1px solid var(--color-grey02);
+    border-radius: 4px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.totalMoney__Container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalMoney__Container h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-grey04);
+}
+
+.totalMoney__Container p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--color-grey03);
+}
+
+.totalMoney__Container span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}

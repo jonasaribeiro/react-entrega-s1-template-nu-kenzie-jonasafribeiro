@@ -1,0 +1,23 @@
+.emptyLi{
+    padding: 25px 10px;
+    border-left: 3px solid var(--color-grey02);
+    border-radius: 4px;
+    background-color: var(--color-grey01);
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.emptyLi > div{
+    background-color: var(--color-grey02);
+    height: 13px;
+}
+
+.grayBox1{
+    width: 70%;
+}
+
+.grayBox2{
+    width: 20%;
+}

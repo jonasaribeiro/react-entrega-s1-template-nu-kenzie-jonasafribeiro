@@ -1,0 +1,26 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+
+    background-color: var(--color-grey01);
+    box-shadow: 0px 1px 12px #00000025;
+}
+
+header > button {
+    background-color: var(--color-grey02);
+    color: var(--color-grey03);
+    font-size: 1rem;
+    font-weight: 600;
+
+    padding: 10.5px 15px;
+    border-style: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
