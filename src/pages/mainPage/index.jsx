@@ -11,14 +11,15 @@ import "./index.css"
 
 export default function MainPage(prop) {
 
-    const [ list, setList ] = useState( JSON.parse(localStorage.getItem("@NuKenzie")) )
+    const [ list, setList ] = useState( localStorage.getItem("@NuKenzie") ? JSON.parse(localStorage.getItem("@NuKenzie")) : [] ) 
+    console.log(list)
 
     return (
         <>
             <main>
                 <div className='form__Container'>
                     <Form callback={setList} list={list} />
-                    <TotalMoney list={list} callback={setList} totalValue={ list.reduce( (soma, item) => item.type === "Entrada" ? item.value + soma : soma - item.value, 0 )} />
+                    <TotalMoney list={list} callback={setList} />
                 </div>
                 <List list={list} setList={setList} />
             </main>

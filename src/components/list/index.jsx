@@ -1,10 +1,9 @@
 import React from 'react'
 import ListItem from '../../components/itemLista'
 import EmptyCard from '../../components/emptyCard'
-import verifyIfEmpty from '../../script/index'
+import verifyIfEmpty from '../../script/verifyItem/index'
 
 export default function List(prop){
-    console.log(prop)
     return(
         <div className='list__Container'>
             <h2>Resumo Financeiro</h2>
@@ -16,11 +15,3 @@ export default function List(prop){
         </div>
     )
 }
-
-// function verifyIfEmpty(list) {
-//     if(list && (typeof(list === "object") ? list.length > 0 : false)){
-//         return true
-//     } else{
-//         return false
-//     }
-// }
