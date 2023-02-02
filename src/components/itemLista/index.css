@@ -6,7 +6,12 @@ li {
 
     border-radius: 4px;
     background-color: var(--color-grey01);
-    }
+}
+
+li:hover{
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 42px -12px #00000025;
+}
 
 li.liEntrada {
     border-left: 4px solid var(--color-secundary);
@@ -40,6 +45,10 @@ li button {
     border-style: none;
     width: 22px;
     height: 22px;
+}
+
+li button:hover {
+    filter: invert(1);
 }
 
 .nameDiv {

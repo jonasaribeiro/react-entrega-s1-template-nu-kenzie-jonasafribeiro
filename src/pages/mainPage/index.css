@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+* {
+    font-family: Nunito;
+}
+
 main {
     background-color: var(--color-white);
     padding: 100px 12px 40px 12px;
@@ -36,6 +42,7 @@ main > div {
     main{
         justify-content: center;
         flex-direction: row;
+        padding: 100px;
     }
     .form__Container{
         max-width: 45%;

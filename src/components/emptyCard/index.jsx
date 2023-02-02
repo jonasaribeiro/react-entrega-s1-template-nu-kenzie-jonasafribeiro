@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 
-export default function EmptyCard(){
+export default function EmptyCard({ list }){
     return (
         <>
             <li className='emptyLi'>

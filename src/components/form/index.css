@@ -63,3 +63,7 @@ form button {
 
     cursor: pointer;
 }
+
+form button:hover{
+    background-color: var(--color-primary2);
+}
