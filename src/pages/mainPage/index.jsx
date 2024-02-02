@@ -12,7 +12,7 @@ import "./index.css"
 export default function MainPage(prop) {
 
     const [ list, setList ] = useState( localStorage.getItem("@NuKenzie") ? JSON.parse(localStorage.getItem("@NuKenzie")) : [] ) 
-    console.log(list)
+
 
     return (
         <>
